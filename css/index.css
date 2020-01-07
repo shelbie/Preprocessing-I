@@ -141,23 +141,22 @@ header {
 header nav {
   display: flex;
   width: 100%;
-  padding: 3%;
-  border: solid;
-  justify-content: flex-end;
+  padding: 0 3%;
   background: #d4d4d4;
-  align-content: space-between;
+  align-content: space-around;
 }
 header nav a {
-  width: 8%;
-  margin: 1%;
-  padding: 1%;
-  align-content: space-between;
+  width: 25%;
+  padding: 1% 0;
+  margin: 1% 2%;
   text-decoration: none;
   color: black;
-  background: white;
+  text-transform: uppercase;
+  border: solid 1px transparent;
 }
 header nav a:hover {
-  color: orange;
+  border-top: solid 1px orange;
+  border-bottom: solid 1px orange;
 }
 section {
   display: flex;
@@ -167,28 +166,79 @@ section p {
   justify-content: center;
   align-items: center;
   padding: 3%;
-  border: solid;
 }
 .intro {
-  display: flex;
   margin: 2%;
-  justify-content: center;
+  padding: 1.5%;
 }
-.intro p {
-  width: 50%;
-  align-content: center;
+.intro img {
+  width: 18em;
+  padding: 1%;
+  margin: 0 2%;
 }
 .intro h1 {
-  padding: 3%;
-  align-content: center;
+  font-size: 1.7rem;
+  padding: 2%;
+}
+.intro p {
+  padding: 2%;
+}
+.skillsWorkHist {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2%;
+}
+.skillsWorkHist h2 {
+  font-size: 1.1rem;
+  padding: 2%;
+  width: 100%;
+}
+.skills {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  width: 20%;
+  float: left;
+}
+.skills ul {
+  list-style: none;
+  padding: 1%;
 }
 .workHistory {
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+}
+.workHistory h2 {
+  width: 100%;
+  flex-direction: row;
+}
+.workHistory h3 {
+  width: 100%;
+  padding: 4%;
+  text-align: center;
+  font-weight: bold;
 }
 .workHistory div {
+  display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 25%;
+}
+.workHistory div p {
+  margin: auto;
+  padding: 2%;
+  width: 100%;
+  height: 5vh;
+  border: solid 1px;
+  justify-content: space-evenly;
+}
+.yrs .company .title .skills {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   border: solid 1px;
   padding: 1%;
 }

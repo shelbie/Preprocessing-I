@@ -55,6 +55,7 @@ table {
 
 html, body {
 	height: 100%;
+
 }
 
 
@@ -70,24 +71,24 @@ header {
 	nav {
 		display: flex;
 		width: 100%;
-		padding: 3%;
-		border: solid;
-		justify-content: flex-end;
+		padding: 0 3%;
 		background: @section-background;
-		align-content: space-between;
+		align-content: space-around;
 
 		a {
-			width: 8%;
-			margin: 1%;
-			padding: 1%;
-			align-content: space-between;
+			width: 25%;
+			padding: 1% 0;
+			margin: 1% 2%;
 			text-decoration: none;
 			color: @a-color;
-			background: white;	
+			text-transform: uppercase;
+			border: solid 1px transparent;
+	
 		}
 
 		a:hover {
-			color: @a-hover;
+			border-top: solid 1px orange;
+			border-bottom: solid 1px orange;
 		}
 	}
 }
@@ -100,39 +101,109 @@ section {
 		justify-content: center;
 		align-items: center;
 		padding: 3%;
-		border: solid;
 	}}
 
 	.intro {
-		display: flex;
 		margin: 2%;
-		justify-content: center;
+		padding: 1.5%;
+		
+
+		img {
+			width: 18em;
+			padding: 1%;
+			margin: 0 2%;
+		}
+
+		h1 {
+			font-size: 1.7rem;
+			padding: 2%;
+		}
 
 		p {
-			width: 50%;
-			align-content: center;
+			padding: 2%;
+		}	
+	}
+
+
+	.skillsWorkHist {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		padding: 2%;
+
+
+		h2 {
+			font-size: 1.1rem;
+			padding: 2%;
+			width: 100%;
+			
 		}
 	}
 
-	.intro {
-		h1 {
-			padding: 3%;
-			align-content: center;
-	
+	.skills {
+		display: flex;
+		flex-flow: column wrap;
+		text-align: center;
+		width: 20%;
+		float: left;
+		
+		
+
+
+		ul {
+			list-style: none;
+			padding: 1%;
+
 		}
 	}
-
 
 	.workHistory {
 		display: flex;
 		text-align: center;
+		flex-wrap: wrap;
+		width: 70%;
+		justify-content: center;
 
-		div {
-			flex-direction: column;
-			width: 20%;
+		h2{
+			width: 100%;
+			flex-direction: row;
+		}
+
+    h3 {
+		width: 100%;
+		padding: 4%;
+		text-align: center;
+		font-weight: bold;
+
+	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+
+		
+
+		
+	
+	p {
+		margin: auto;
+		padding: 2%;
+		width: 100%;
+		height: 5vh;
+		border:solid 1px;
+		justify-content: space-evenly;
+	
+
+	}
+}}
+
+		.yrs .company .title .skills {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
 			border: solid 1px;
 			padding: 1%;
 	
-
-		}
 	  }
+
