@@ -134,6 +134,42 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(https://fonts.gstatic.com/s/shadowsintolight/v9/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD8.ttf) format('truetype');
+}
+.divmain {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.headerfont {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
+}
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fullwidth {
+  width: 100%;
+}
+.border {
+  border-bottom: solid 1px #ff771cc5;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+.paddingTwo {
+  padding: 2%;
+}
 header {
   display: flex;
   text-align: center;
@@ -145,6 +181,13 @@ header nav {
   background: #d4d4d4;
   align-content: space-around;
 }
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 header nav a {
   width: 25%;
   padding: 1% 0;
@@ -154,74 +197,124 @@ header nav a {
   text-transform: uppercase;
   border: solid 1px transparent;
 }
+@media (max-width: 500px) {
+  header nav a {
+    width: 100%;
+  }
+}
 header nav a:hover {
-  border-top: solid 1px #ff771cc5;
   border-bottom: solid 1px #ff771cc5;
+}
+@media (max-width: 500px) {
+  header nav a:hover {
+    background: #ff771cc5;
+  }
 }
 section {
   display: flex;
 }
+@media (max-width: 500px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 section p {
   justify-content: center;
   align-items: center;
-  padding: 3%;
   vertical-align: middle;
+  text-align: center;
+  padding: 2%;
 }
 .intro {
   margin: 2%;
-  padding: 1.5%;
+  padding: 2%;
 }
 .intro img {
   width: 18em;
-  padding: 1%;
+  padding: 2%;
   margin: 0 2%;
 }
 .intro h1 {
-  font-size: 1.7rem;
   padding: 2%;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .intro h1 {
+    text-align: center;
+  }
 }
 .intro p {
-  padding: 2%;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .intro p {
+    text-align: center;
+  }
 }
 .both {
   display: flex;
-  justify-content: space-evenly;
   width: 100%;
-  padding: 0 2%;
+  padding: 2%;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .both {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .both h2 {
-  font-size: 1.1rem;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
   padding: 2%;
   width: 100%;
-  flex-direction: row;
   justify-content: stretch;
+  background-color: #ff771cc5;
 }
 .both .skills {
   display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
   flex-direction: column;
   width: 30%;
   text-align: center;
-  flex-wrap: wrap;
-  padding: 1%;
+  padding: 2% 0;
 }
-.both .skills h2 {
-  background-color: #ff771cc5;
-  justify-content: stretch;
+@media (max-width: 500px) {
+  .both .skills {
+    width: 100%;
+  }
 }
 .both .skills ul {
   list-style: none;
-  padding: 1%;
+  padding: 2%;
 }
 .both .skills ul li {
-  padding: 3%;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .both .skills ul li {
+    padding: 1%;
+  }
 }
 .workHistory {
   display: flex;
-  text-align: center;
   flex-wrap: wrap;
-  width: 80%;
+  padding: 2%;
   justify-content: center;
-  padding: 1%;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .workHistory {
+    width: 100%;
+    margin: 4% 0;
+  }
 }
 .workHistory p {
   width: 24%;
@@ -234,6 +327,7 @@ section p {
 }
 .workHistory h3 {
   width: 100%;
+  border-bottom: solid 1px #ff771cc5;
   padding: 2%;
   text-align: center;
   font-weight: bold;
@@ -245,21 +339,26 @@ section p {
 .workHistory .history {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  border-bottom: solid 1px #ff771cc5;
   justify-content: center;
   align-items: center;
-  border-top: solid 1px;
-  border-color: #ff771cc5;
+  vertical-align: middle;
+  text-align: center;
 }
 .contactInfo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
   padding: 2%;
   background-color: #d4d4d4;
 }
 .contactInfo div {
-  padding: 2%;
-  width: 100%;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  padding: 2%;
 }
