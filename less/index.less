@@ -60,9 +60,9 @@ html, body {
 
 
 // CODE STARTS HERE!
-@section-background:#d4d4d4;
+@gray-background:#d4d4d4;
 @a-color: black;
-@a-hover: orange;
+@orange-color: #ff771cc5;
 
 header {
 	display: flex;
@@ -72,7 +72,7 @@ header {
 		display: flex;
 		width: 100%;
 		padding: 0 3%;
-		background: @section-background;
+		background: @gray-background;
 		align-content: space-around;
 
 		a {
@@ -87,20 +87,22 @@ header {
 		}
 
 		a:hover {
-			border-top: solid 1px orange;
-			border-bottom: solid 1px orange;
+			border-top: solid 1px @orange-color;
+			border-bottom: solid 1px @orange-color;
 		}
 	}
 }
 
 section {
 	display: flex;
-	background-color: @section-background;
+
+
 
 	p {
 		justify-content: center;
 		align-items: center;
 		padding: 3%;
+		vertical-align: middle;
 	}}
 
 	.intro {
@@ -117,6 +119,7 @@ section {
 		h1 {
 			font-size: 1.7rem;
 			padding: 2%;
+
 		}
 
 		p {
@@ -125,85 +128,100 @@ section {
 	}
 
 
-	.skillsWorkHist {
+	.both {
 		display: flex;
 		justify-content: space-evenly;
 		width: 100%;
-		padding: 2%;
-
+		padding: 0 2%;
 
 		h2 {
 			font-size: 1.1rem;
 			padding: 2%;
 			width: 100%;
+			flex-direction: row;
+			justify-content: stretch;
 			
 		}
-	}
+	
 
 	.skills {
 		display: flex;
-		flex-flow: column wrap;
+		flex-direction: column;
+		width: 30%;
 		text-align: center;
-		width: 20%;
-		float: left;
-		
+		flex-wrap: wrap;
+		padding: 1%;
 		
 
+		h2 {
+			background-color: @orange-color;
+			justify-content: stretch;
+		}
 
 		ul {
 			list-style: none;
 			padding: 1%;
 
+			li{
+				padding: 3%;
+			}
 		}
-	}
+	}}
 
 	.workHistory {
 		display: flex;
 		text-align: center;
 		flex-wrap: wrap;
-		width: 70%;
+		width: 80%;
 		justify-content: center;
+		padding: 1%;
 
-		h2{
-			width: 100%;
-			flex-direction: row;
+		p{
+			width: 24%;
 		}
 
-    h3 {
-		width: 100%;
-		padding: 4%;
-		text-align: center;
-		font-weight: bold;
+		h2 {
+			background-color:@orange-color;
+			width: 100%;
+			flex-direction: row;
+			justify-content: stretch;
 
+		}
+
+		h3 {
+			width: 100%;
+			padding: 2%;
+			text-align: center;
+			font-weight: bold;
+		}
+		.historyTitles {
+				display: flex;
+				width: 98%;
+			}
+			
+		.history {
+			display: flex;
+			width: 100%;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			border-top: solid 1px;
+			border-color: @orange-color;
+			
+
+
+		}
 	}
+.contactInfo {
+	display: flex;
+	justify-content: center;
+	padding: 2%;
+	background-color: @gray-background;
 
 	div {
-		display: flex;
-		flex-direction: column;
-		width: 25%;
-
-		
-
-		
-	
-	p {
-		margin: auto;
 		padding: 2%;
 		width: 100%;
-		height: 5vh;
-		border:solid 1px;
-		justify-content: space-evenly;
-	
-
-	}
+	text-align: center;
+	justify-content: center;
 }}
-
-		.yrs .company .title .skills {
-			display: flex;
-			flex-direction: row;
-			width: 100%;
-			border: solid 1px;
-			padding: 1%;
-	
-	  }
 

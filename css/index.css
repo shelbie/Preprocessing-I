@@ -155,17 +155,17 @@ header nav a {
   border: solid 1px transparent;
 }
 header nav a:hover {
-  border-top: solid 1px orange;
-  border-bottom: solid 1px orange;
+  border-top: solid 1px #ff771cc5;
+  border-bottom: solid 1px #ff771cc5;
 }
 section {
   display: flex;
-  background-color: #d4d4d4;
 }
 section p {
   justify-content: center;
   align-items: center;
   padding: 3%;
+  vertical-align: middle;
 }
 .intro {
   margin: 2%;
@@ -183,62 +183,83 @@ section p {
 .intro p {
   padding: 2%;
 }
-.skillsWorkHist {
+.both {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  padding: 2%;
+  padding: 0 2%;
 }
-.skillsWorkHist h2 {
+.both h2 {
   font-size: 1.1rem;
   padding: 2%;
   width: 100%;
+  flex-direction: row;
+  justify-content: stretch;
 }
-.skills {
+.both .skills {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  width: 30%;
   text-align: center;
-  width: 20%;
-  float: left;
+  flex-wrap: wrap;
+  padding: 1%;
 }
-.skills ul {
+.both .skills h2 {
+  background-color: #ff771cc5;
+  justify-content: stretch;
+}
+.both .skills ul {
   list-style: none;
   padding: 1%;
+}
+.both .skills ul li {
+  padding: 3%;
 }
 .workHistory {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
   justify-content: center;
+  padding: 1%;
+}
+.workHistory p {
+  width: 24%;
 }
 .workHistory h2 {
+  background-color: #ff771cc5;
   width: 100%;
   flex-direction: row;
+  justify-content: stretch;
 }
 .workHistory h3 {
   width: 100%;
-  padding: 4%;
+  padding: 2%;
   text-align: center;
   font-weight: bold;
 }
-.workHistory div {
+.workHistory .historyTitles {
   display: flex;
-  flex-direction: column;
-  width: 25%;
+  width: 98%;
 }
-.workHistory div p {
-  margin: auto;
+.workHistory .history {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px;
+  border-color: #ff771cc5;
+}
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: #d4d4d4;
+}
+.contactInfo div {
   padding: 2%;
   width: 100%;
-  height: 5vh;
-  border: solid 1px;
-  justify-content: space-evenly;
-}
-.yrs .company .title .skills {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  border: solid 1px;
-  padding: 1%;
+  text-align: center;
+  justify-content: center;
 }
