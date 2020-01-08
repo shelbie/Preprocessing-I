@@ -1,1 +1,364 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(https://fonts.gstatic.com/s/shadowsintolight/v9/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD8.ttf) format('truetype');
+}
+.divmain {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.headerfont {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
+}
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fullwidth {
+  width: 100%;
+}
+.border {
+  border-bottom: solid 1px #ff771cc5;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+.paddingTwo {
+  padding: 2%;
+}
+header {
+  display: flex;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  padding: 0 3%;
+  background: #d4d4d4;
+  align-content: space-around;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+header nav a {
+  width: 25%;
+  padding: 1% 0;
+  margin: 1% 2%;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  border: solid 1px transparent;
+}
+@media (max-width: 500px) {
+  header nav a {
+    width: 100%;
+  }
+}
+header nav a:hover {
+  border-bottom: solid 1px #ff771cc5;
+}
+@media (max-width: 500px) {
+  header nav a:hover {
+    background: #ff771cc5;
+  }
+}
+section {
+  display: flex;
+}
+@media (max-width: 500px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+section p {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  padding: 2%;
+}
+.intro {
+  margin: 2%;
+  padding: 2%;
+}
+.intro img {
+  width: 18em;
+  padding: 2%;
+  margin: 0 2%;
+}
+.intro h1 {
+  padding: 2%;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .intro h1 {
+    text-align: center;
+  }
+}
+.intro p {
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .intro p {
+    text-align: center;
+  }
+}
+.both {
+  display: flex;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .both {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.both h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
+  padding: 2%;
+  width: 100%;
+  justify-content: stretch;
+  background-color: #ff771cc5;
+}
+.both .skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  padding: 2% 0;
+}
+@media (max-width: 500px) {
+  .both .skills {
+    width: 100%;
+  }
+}
+.both .skills ul {
+  list-style: none;
+  padding: 2%;
+}
+.both .skills ul li {
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .both .skills ul li {
+    padding: 1%;
+  }
+}
+.workHistory {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .workHistory {
+    width: 100%;
+    margin: 4% 0;
+  }
+}
+.workHistory p {
+  width: 24%;
+}
+.workHistory h2 {
+  background-color: #ff771cc5;
+  width: 100%;
+  flex-direction: row;
+  justify-content: stretch;
+}
+.workHistory h3 {
+  width: 100%;
+  border-bottom: solid 1px #ff771cc5;
+  padding: 2%;
+  text-align: center;
+  font-weight: bold;
+}
+.workHistory .historyTitles {
+  display: flex;
+  width: 98%;
+}
+.workHistory .history {
+  display: flex;
+  width: 100%;
+  border-bottom: solid 1px #ff771cc5;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  padding: 2%;
+  background-color: #d4d4d4;
+}
+.contactInfo div {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  padding: 2%;
+}
